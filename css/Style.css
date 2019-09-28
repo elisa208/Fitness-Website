@@ -1,0 +1,15 @@
+h2 {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h3 {
+    font-family: 'Open Sans', sans-serif;
+}
+
+ul {
+    box-shadow: inset 0 0 0 4px #58af50;
+}
+
+li {
+    float: right;
+}
