@@ -1,190 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
+<head>
+
+    <title>Login</title>
+    <meta content="text/html; charset=windows-1252" http-equiv="Content-Type">
+    <meta charset="utf-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta content="footer, contact, form, icons" name="keywords"/>
 
     <link href="css/Style.css" rel="stylesheet" type="text/css"/>
-    <title>Login</title>
-
-    <link crossorigin="anonymous" href="./bootstrap.min.css" rel="stylesheet">
-
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" crossorigin="anonymous">
-
+    <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          rel="stylesheet">
+    <link href="css/demo.css" rel="stylesheet">
+    <link href="css/footer-distributed-with-contact-form.css" rel="stylesheet">
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
     <style>
-      ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-        background-color: #333;
-        position: -webkit-sticky;
-        position: sticky;
-        top: 0;
-      }
+        input[type=text],
+        select {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
 
-      li {
-        float: left;
-      }
+        input[type=submit] {
+            width: 100%;
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
 
-      li a {
-        display: block;
-        color: white;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-      }
+        input[type=submit]:hover {
+            background-color: #45a049;
+        }
 
-      li a:hover:not(.active) {
-        background-color: #111;
-      }
-
-      .active {
-        background-color: #4CAF50;
-      }
-
-      li {
-        border-right: 1px solid #bbb;
-      }
-
-      li:last-child {
-        border-right: none;
-      }
-
-      input[type=text],
-      select {
-        width: 100%;
-        padding: 12px 20px;
-        margin: 8px 0;
-        display: inline-block;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-        box-sizing: border-box;
-      }
-
-      input[type=submit] {
-        width: 100%;
-        background-color: #4CAF50;
-        color: white;
-        padding: 14px 20px;
-        margin: 8px 0;
-        border: none;
-        border-radius: 4px;
-        cursor: pointer;
-      }
-
-      input[type=submit]:hover {
-        background-color: #45a049;
-      }
-
-      div {
-        border-radius: 5px;
-        padding: 20px;
-      }
-
-      input[type=text] {
-        border: none;
-        border-bottom: 2px solid black;
-      }
+        input[type=text] {
+            border: none;
+            border-bottom: 2px solid black;
+        }
     </style>
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="keywords" content="footer, contact, form, icons" />
+</head>
 
-    <title>Footer Distributed With Contact Form</title>
+<body>
 
-    <link rel="stylesheet" href="css/demo.css">
-    <link rel="stylesheet" href="css/footer-distributed-with-contact-form.css">
-
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
-
-    <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
-
-  </head>
-
-  <body>
-
-    <div class="header">
-      <h2>Fitness</h2>
-      <h3>Don't wish for a good looking body,
+<div class="header">
+    <h2>Fitness</h2>
+    <h3>Don't wish for a good looking body,
         Work For It!</h3>
-    </div>
-    <ul>
-      <li><a class="active" href="index.html">Home</a></li>
-      <li><a href="about.html">About Me</a></li>
-      <li><a href="beginner.html">Beginner</a></li>
-      <li><a href="already_started.html">Already Started</a></li>
-      <li><a href="expert.html">Expert</a></li>
-      <li><a class="active" href="login.html">Login</a></li>
-    </ul>
+</div>
+<ul>
+    <li><a class="active" href="index.html">Home</a></li>
+    <li><a href="about.html">About Me</a></li>
+    <li><a href="beginner.html">Beginner</a></li>
+    <li><a href="already_started.html">Already Started</a></li>
+    <li><a href="expert.html">Expert</a></li>
+    <li style="float:right"><a class="active" href="login.html">Login</a></li>
+</ul>
 
-    <br>
+<br>
 
-    <h3>Login Here!</h3>
+<h3>Login Here!</h3>
 
-    <div>
-      <form action="/action_page.php">
+<div>
+    <form action="/action_page.php">
         <label for="fname">Email</label>
-        <input type="text" id="fname" name="firstname" placeholder="Email adress...">
+        <input id="fname" name="firstname" placeholder="Email adress..." type="text">
 
         <label for="lname">Password</label>
-        <input type="text" id="lname" name="lastname" placeholder="Password...">
+        <input id="lname" name="lastname" placeholder="Password..." type="text">
 
 
         <input type="submit" value="Submit">
-      </form>
-    </div>
+    </form>
+</div>
 
-    <footer class="footer-distributed">
+<footer class="footer-distributed">
 
-      <div class="footer-left">
+    <div class="footer-left">
 
         <h3>Fitness<span>Forever</span></h3>
 
         <p class="footer-links">
-          <a href="index.html">Home</a>
-          <br>
-          <a href="about.html">About</a>
-          <br>
-          <a href="beginner.html">Beginner</a>
-          <br>
-          <a href="already_started.html">Already Started</a>
-          <br>
-          <a href="expert.html">Expert</a>
-          <br>
-          <a href="login.html">Login</a>
+            <a href="index.html">Home</a>
+            <br>
+            <a href="about.html">About Me</a>
+            <br>
+            <a href="beginner.html">Beginner</a>
+            <br>
+            <a href="already_started.html">Already Started</a>
+            <br>
+            <a href="expert.html">Expert</a>
+            <br>
+            <a href="login.html">Login</a>
         </p>
 
         <p class="footer-company-name">Fitness &copy; 2019</p>
 
         <div class="footer-icons">
 
-          <a href="#"><i class="fa fa-facebook"></i></a>
-          <a href="#"><i class="fa fa-twitter"></i></a>
-          <a href="#"><i class="fa fa-linkedin"></i></a>
-          <a href="#"><i class="fa fa-github"></i></a>
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
+            <a href="#"><i class="fa fa-github"></i></a>
 
         </div>
 
-      </div>
+    </div>
 
-      <div class="footer-right">
+    <div class="footer-right">
 
         <p>Contact Me!</p>
 
         <form action="#" method="post">
 
-          <input type="text" name="email" placeholder="Email" />
-          <textarea name="message" placeholder="Message"></textarea>
-          <button>Send</button>
+            <input name="email" placeholder="Email" type="text"/>
+            <textarea name="message" placeholder="Message"></textarea>
+            <button>Send</button>
 
         </form>
 
-      </div>
+    </div>
 
-    </footer>
+</footer>
 
-  </body>
+</body>
 
 </html>
